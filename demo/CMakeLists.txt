@@ -7,7 +7,7 @@ add_executable(pcap_manual_reorder reorder_main.cpp)
 target_link_libraries(pcap_manual_reorder libreass)
 
 add_executable(reass_printall reass_printall.cpp)
-target_link_libraries(reass_printall libreass)
+target_link_libraries(reass_printall libreass boost_system boost_filesystem)
 
 add_executable(reass_monitor_packetloss reass_monitor_packetloss.cpp)
 target_link_libraries(reass_monitor_packetloss libreass)
